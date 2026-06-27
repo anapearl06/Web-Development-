@@ -1,0 +1,207 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ananya's CSS Selectors Demo</title>
+
+  <style>
+    /* 1. Universal Selector */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f4f7fb;
+      color: #333;
+      padding: 30px;
+      line-height: 1.7;
+    }
+
+    /* 2. Type Selector */
+    p {
+      font-size: 16px;
+      margin-bottom: 15px;
+      background-color: white;
+      padding: 12px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    /* 3. Class Selector */
+    .highlight {
+      background-color: #b8ecff;
+      border-left: 5px solid #2196f3;
+      font-weight: bold;
+    }
+
+    /* 4. ID Selector */
+    #header {
+      background: linear-gradient(135deg, #2563eb, #9333ea);
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 28px;
+      font-weight: bold;
+      border-radius: 10px;
+      margin-bottom: 25px;
+    }
+
+    /* 5. Attribute Selector */
+    input[type="text"] {
+      border: 2px solid #2196f3;
+      padding: 12px;
+      border-radius: 8px;
+      width: 100%;
+      margin: 20px 0;
+    }
+
+    /* 6. Descendant Selector */
+    article p {
+      font-style: italic;
+      background-color: #1a1a1a;
+      color: white;
+      padding: 12px;
+    }
+
+    /* 7. Child Selector */
+    div > p {
+      background-color: #ffe5e5;
+    }
+
+    /* 8. Adjacent Sibling Selector */
+    h1 + p {
+      font-weight: bold;
+    }
+
+    /* 9. General Sibling Selector */
+    h2 ~ p {
+      color: #8b0000;
+    }
+
+    /* 10. Link Styling */
+    a {
+      display: inline-block;
+      margin: 20px 0;
+      background: #2563eb;
+      color: white;
+      padding: 10px 18px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    /* 10. Pseudo-class Selector */
+    a:hover {
+      background-color: #4caf50;
+      color: white;
+      transform: translateY(-2px);
+    }
+
+    /* 11. Pseudo-element Selector */
+    p::first-letter {
+      font-weight: bold;
+      font-size: 30px;
+      color: #2563eb;
+    }
+
+    /* 12. Grouping Selector */
+    h1,
+    h2,
+    h3 {
+      color: #ff9800;
+      margin: 20px 0 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header id="header">
+    🌸 Welcome to Ananya's CSS Selectors Demo
+  </header>
+
+  <h1>Hello, I'm Ananya 👋</h1>
+
+  <p>
+    I am a B.Tech student with a strong interest in programming and software development.
+  </p>
+
+  <p>
+    Every day I practice coding and improve my problem-solving skills.
+  </p>
+
+  <p class="highlight">
+    Currently learning HTML, CSS, Python, Java and exploring Web Development.
+  </p>
+
+  <input type="text" placeholder="Enter your favourite programming language">
+
+  <article>
+
+    <p>
+      I enjoy creating beautiful websites while learning CSS selectors.
+    </p>
+
+    <p>
+      My goal is to become a skilled Full Stack Developer through consistency.
+    </p>
+
+    <div>
+      <p>
+        I also love building mini projects and improving my frontend skills.
+      </p>
+    </div>
+
+  </article>
+
+  <div>
+
+    <p>I have completed my HTML basics.</p>
+
+    <p>Currently learning CSS in depth.</p>
+
+    <section>
+      <p>I recently started my DSA journey.</p>
+    </section>
+
+    <p>Next step is mastering JavaScript.</p>
+
+  </div>
+
+  <h2>My Coding Journey 🚀</h2>
+
+  <p>
+    Every project teaches me something new and helps me grow as a developer.
+  </p>
+
+  <div>
+    Consistency is my biggest strength.
+  </div>
+
+  <p>
+    I enjoy solving coding problems and creating responsive websites.
+  </p>
+
+  <a href="https://anapearl06.github.io/anapearl06/" target="_blank">
+    🌐 Visit My Portfolio
+  </a>
+
+  <p>
+    CSS selectors make web pages cleaner, more organized and easier to style.
+  </p>
+
+  <h3>Future Goals 🎯</h3>
+
+  <p>
+    My aim is to become a Full Stack Developer and build impactful real-world projects.
+  </p>
+
+</body>
+</html>
+```
