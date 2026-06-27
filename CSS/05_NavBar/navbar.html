@@ -1,0 +1,295 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ananya's Navigation Bar Variations</title>
+
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background: #1e293b;
+      color: white;
+    }
+
+    .nav-container {
+      margin-bottom: 45px;
+    }
+
+    h2 {
+      margin-bottom: 12px;
+      color: #60a5fa;
+    }
+
+    /* -- NAVBAR 1 -- */
+
+    .nav1 {
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,.2);
+    }
+
+    .nav1 ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .nav1 a {
+      text-decoration: none;
+      color: #1e293b;
+      padding: 8px 15px;
+      position: relative;
+      font-weight: bold;
+    }
+
+    .nav1 a::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      left: 0;
+      bottom: 0;
+      background: #2563eb;
+      transform: scaleX(0);
+      transition: .3s;
+    }
+
+    .nav1 a:hover::after {
+      transform: scaleX(1);
+    }
+
+    .nav1 .login-btn {
+      background: #2563eb;
+      color: white;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .nav1 .login-btn:hover {
+      background: #1d4ed8;
+    }
+
+    /* -- NAVBAR 2 -- */
+
+    .nav2 {
+      background: #0f766e;
+      width: 230px;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .nav2 ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .nav2 li {
+      margin-bottom: 12px;
+    }
+
+    .nav2 a {
+      display: block;
+      text-decoration: none;
+      color: white;
+      padding: 12px;
+      border-radius: 6px;
+      transition: .3s;
+    }
+
+    .nav2 a:hover {
+      background: #14b8a6;
+      padding-left: 18px;
+    }
+
+    .nav2 .login-btn {
+      width: 100%;
+      border: none;
+      padding: 12px;
+      border-radius: 6px;
+      background: #22c55e;
+      color: white;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .nav2 .login-btn:hover {
+      background: #16a34a;
+    }
+
+    /* -- NAVBAR 3 -- */
+
+    .nav3 {
+      background: #2563eb;
+      padding: 15px;
+      border-radius: 10px;
+    }
+
+    .nav3 ul {
+      list-style: none;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav3 a {
+      text-decoration: none;
+      color: white;
+      padding: 10px;
+      display: block;
+    }
+
+    .nav3 .dropdown {
+      position: relative;
+    }
+
+    .nav3 .dropdown-content {
+      display: none;
+      position: absolute;
+      background: white;
+      min-width: 180px;
+      border-radius: 8px;
+      overflow: hidden;
+      top: 40px;
+      box-shadow: 0 5px 12px rgba(0,0,0,.3);
+    }
+
+    .nav3 .dropdown-content a {
+      color: #1e293b;
+      padding: 12px;
+    }
+
+    .nav3 .dropdown-content a:hover {
+      background: #dbeafe;
+    }
+
+    .nav3 .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .nav3 .login-btn {
+      border: none;
+      background: white;
+      color: #2563eb;
+      padding: 10px 18px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .nav3 .login-btn:hover {
+      background: #e5e7eb;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="nav-container">
+
+    <h2>Variation 1 : Personal Portfolio Navigation</h2>
+
+    <nav class="nav1">
+      <ul>
+
+        <li><a href="#">Home</a></li>
+
+        <li><a href="#">About Me</a></li>
+
+        <li><a href="#">Skills</a></li>
+
+        <li><button class="login-btn">Contact</button></li>
+
+      </ul>
+    </nav>
+
+  </div>
+
+
+
+  <div class="nav-container">
+
+    <h2>Variation 2 : Sidebar Navigation</h2>
+
+    <nav class="nav2">
+
+      <ul>
+
+        <li><a href="#">My Journey</a></li>
+
+        <li><a href="#">Projects</a></li>
+
+        <li><a href="#">Achievements</a></li>
+
+      </ul>
+
+      <button class="login-btn">
+        Hire Me
+      </button>
+
+    </nav>
+
+  </div>
+
+
+
+  <div class="nav-container">
+
+    <h2>Variation 3 : Portfolio Navigation with Dropdown</h2>
+
+    <nav class="nav3">
+
+      <ul>
+
+        <li><a href="#">Home</a></li>
+
+        <li class="dropdown">
+
+          <a href="#">About Me</a>
+
+          <div class="dropdown-content">
+
+            <a href="#">Education</a>
+
+            <a href="#">Skills</a>
+
+            <a href="#">Coding Journey</a>
+
+          </div>
+
+        </li>
+
+        <li>
+          <a href="https://anapearl06.github.io/anapearl06/" target="_blank">
+            Portfolio
+          </a>
+        </li>
+
+        <li>
+          <button class="login-btn">
+            Contact
+          </button>
+        </li>
+
+      </ul>
+
+    </nav>
+
+  </div>
+
+</body>
+</html>
+```
