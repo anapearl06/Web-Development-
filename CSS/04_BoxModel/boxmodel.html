@@ -1,0 +1,153 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ananya's CSS Box Model Demo</title>
+
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      padding: 25px;
+      background-color: #f4f7fb;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      color: #2563eb;
+      margin-bottom: 25px;
+    }
+
+    h2 {
+      color: #ff9800;
+      margin-top: 30px;
+      margin-bottom: 15px;
+    }
+
+    .box-model-demo {
+      width: 300px;
+      height: 200px;
+      padding: 20px;
+      border: 5px solid #333;
+      margin: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+
+    .content-box {
+      box-sizing: content-box;
+      background-color: #dbeafe;
+    }
+
+    .border-box {
+      box-sizing: border-box;
+      background-color: #dcfce7;
+    }
+
+    .box-model-demo p {
+      margin: 0;
+    }
+
+    .highlight {
+      background-color: #ffe082;
+      display: inline-block;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+
+    .inline-example {
+      background-color: #cce6ff;
+      padding: 10px;
+      margin: 10px;
+      width: 200px;
+      height: 100px;
+    }
+
+    .block-example {
+      background-color: #fbcfe8;
+      padding: 15px;
+      margin: 10px;
+      width: 250px;
+      height: 110px;
+      border-radius: 8px;
+      border-left: 5px solid #ec4899;
+    }
+
+    ul {
+      margin-top: 10px;
+      padding-left: 25px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Ananya's CSS Box Model Demo 📦</h1>
+
+  <h2>Content-box (Default)</h2>
+
+  <div class="box-model-demo content-box">
+    <p>Learning HTML & CSS with consistency.</p>
+    <p>Content Width: 300px + Padding + Border</p>
+    <p>This box demonstrates the default content-box model.</p>
+  </div>
+
+  <h2>Border-box</h2>
+
+  <div class="box-model-demo border-box">
+    <p>Building responsive web projects.</p>
+    <p>Total Width always remains 300px.</p>
+    <p>Padding and border are included inside the box.</p>
+  </div>
+
+  <h2>Inline vs Block Elements</h2>
+
+  <p>
+    I enjoy learning
+    <span class="inline-example">HTML & CSS</span>
+    every day. Inline elements stay within the text flow and only occupy the space they need.
+  </p>
+
+  <div class="block-example">
+    This block represents one of my mini web development projects. Block elements always start on a new line and take up the available width.
+  </div>
+
+  <h2>CSS Box Model Components</h2>
+
+  <p>The CSS Box Model helps me understand webpage layouts using these four components:</p>
+
+  <ul>
+
+    <li>
+      <span class="highlight">Content</span> :
+      The actual text, images, or elements displayed inside the box.
+    </li>
+
+    <li>
+      <span class="highlight">Padding</span> :
+      Creates space between the content and the border.
+    </li>
+
+    <li>
+      <span class="highlight">Border</span> :
+      Surrounds the content and padding, giving the box its outline.
+    </li>
+
+    <li>
+      <span class="highlight">Margin</span> :
+      Adds space outside the border to separate elements from each other.
+    </li>
+
+  </ul>
+
+</body>
+</html>
+```
