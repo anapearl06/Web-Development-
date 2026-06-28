@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 30px;
+            line-height: 1.8;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            color: #2c3e50;
+        }
+
+        .box {
+            width: 250px;
+            padding: 20px;
+            margin: 20px 0;
+            background-color: white;
+            border: 2px solid royalblue;
+        }
+
+        .small-shadow {
+            box-shadow: 3px 3px 8px gray;
+        }
+
+        .large-shadow {
+            box-shadow: 8px 8px 18px gray;
+        }
+
+        .blue-shadow {
+            box-shadow: 5px 5px 12px royalblue;
+        }
+
+        .spread-shadow {
+            box-shadow: 0 0 10px 5px lightgray;
+        }
+
+        .inset-shadow {
+            box-shadow: inset 4px 4px 10px gray;
+        }
+
+        .multiple-shadow {
+            box-shadow:
+                3px 3px 8px gray,
+                -3px -3px 8px lightgray;
+        }
+
+        .circle {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 5px 5px 15px gray;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Box Shadow</h1>
+
+    <h2>1. Small Shadow</h2>
+
+    <div class="box small-shadow">
+        Small Box Shadow
+    </div>
+
+    <h2>2. Large Shadow</h2>
+
+    <div class="box large-shadow">
+        Large Box Shadow
+    </div>
+
+    <h2>3. Colored Shadow</h2>
+
+    <div class="box blue-shadow">
+        Blue Shadow
+    </div>
+
+    <h2>4. Spread Shadow</h2>
+
+    <div class="box spread-shadow">
+        Spread Shadow
+    </div>
+
+    <h2>5. Inset Shadow</h2>
+
+    <div class="box inset-shadow">
+        Inset Shadow
+    </div>
+
+    <h2>6. Multiple Shadows</h2>
+
+    <div class="box multiple-shadow">
+        Multiple Shadows
+    </div>
+
+    <h2>7. Circle with Shadow</h2>
+
+    <div class="box circle">
+        Circle
+    </div>
+
+</body>
+</html>
