@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Flexbox Layout</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f4f4;
+            padding: 30px;
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .box {
+            flex: 1 1 220px;
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+            color: white;
+            font-size: 20px;
+        }
+
+        .html {
+            background-color: #e34f26;
+        }
+
+        .css {
+            background-color: #264de4;
+        }
+
+        .javascript {
+            background-color: #f7df1e;
+            color: black;
+        }
+
+        .react {
+            background-color: #61dafb;
+            color: black;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Responsive Flexbox Layout</h1>
+
+    <div class="container">
+        <div class="box html">HTML</div>
+        <div class="box css">CSS</div>
+        <div class="box javascript">JavaScript</div>
+        <div class="box react">React</div>
+    </div>
+
+</body>
+</html>
