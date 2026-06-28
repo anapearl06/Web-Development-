@@ -1,0 +1,149 @@
+body{
+    background: linear-gradient(to right, #ffe6ab, #f8ca74);
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+}
+
+h3{
+    color: #A0522D;
+    letter-spacing: 2px;
+    font-size: 18px;
+    margin: 0 0 10px 0;
+}
+
+h1{
+    color: rgb(124, 24, 24);
+    font-size: 60px;
+    margin: 0 0 15px 0;
+    line-height: 1.2;
+}
+
+span{
+    color: #380c00;
+}
+
+p{
+    color: #5C4033;
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+img{
+    width: 400px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+img:hover{
+    transform: scale(1.05) rotate(2deg);
+}
+
+input{
+    width: 280px;
+    padding: 14px;
+    border: 2px solid #d2b48c;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+}
+
+input:focus{
+    border: 2px solid #6F4E37;
+}
+
+button{
+    background-color: brown;
+    color: white;
+    padding: 14px 30px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover{
+    background-color: #cd1c1c;
+    transform: translateY(-3px);
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    margin-bottom: 15px;
+}
+
+nav h2{
+    color: #4d280e;
+    font-size: 30px;
+    margin: 0;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: #6f0000;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+a:hover{
+    color: #af5a33;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    max-width: 1200px;
+    margin: 15px auto;
+    padding: 40px 50px;
+
+    gap: 50px;
+
+    background-color: rgb(221, 165, 122);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.left{
+    width: 50%;
+    text-align: left;
+}
+
+.right{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.email-box{
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+footer{
+    text-align: center;
+    color: #5C4033;
+    padding: 20px;
+    margin-top: 10px;
+}
