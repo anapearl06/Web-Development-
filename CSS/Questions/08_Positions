@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions in CSS</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 30px;
+            line-height: 1.8;
+            background-color: #f4f4f4;
+            height: 1800px;
+        }
+
+        h1 {
+            color: #2c3e50;
+        }
+
+        .container {
+            position: relative;
+            width: 350px;
+            height: 220px;
+            border: 2px solid royalblue;
+            background-color: white;
+            margin: 25px 0;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .static {
+            position: static;
+            background-color: gray;
+        }
+
+        .relative {
+            position: relative;
+            top: 20px;
+            left: 20px;
+            background-color: royalblue;
+        }
+
+        .absolute {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: tomato;
+        }
+
+        .fixed {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: seagreen;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        .sticky {
+            position: sticky;
+            top: 0;
+            background-color: darkorange;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Position Property</h1>
+
+    <div class="sticky">
+        Sticky Navigation
+    </div>
+
+    <h2>1. Static</h2>
+
+    <div class="container">
+        <div class="box static">
+            Static
+        </div>
+    </div>
+
+    <h2>2. Relative</h2>
+
+    <div class="container">
+        <div class="box relative">
+            Relative
+        </div>
+    </div>
+
+    <h2>3. Absolute</h2>
+
+    <div class="container">
+        <div class="box absolute">
+            Absolute
+        </div>
+    </div>
+
+    <h2>4. Fixed</h2>
+
+    <p>
+        Scroll the page to see the fixed box at the bottom-right corner.
+    </p>
+
+    <div class="fixed">
+        Fixed
+    </div>
+
+</body>
+</html>
