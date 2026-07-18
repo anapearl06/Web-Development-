@@ -9,7 +9,9 @@ function App() {
 
   return (
     <>
-      <h1 class="text-3xl font-bold underline bg-amber-400 p-4">Hello world!</h1>
+      <h1 className="text-3xl font-bold underline bg-amber-500 p-4 !text-black">
+        Hello world!
+      </h1>
       <section id="center">
         <div className="hero">
           <img src={heroImg} className="base" width="170" height="179" alt="" />
