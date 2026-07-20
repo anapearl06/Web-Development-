@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+/* Custom CSS */
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+button {
+    transition: all 0.3s ease;
+}
+
+input {
+    transition: all 0.3s ease;
+}
+
+.login-card {
+    transition: transform 0.4s ease;
+}
+
+.login-card:hover {
+    transform: translateY(-5px);
+}
