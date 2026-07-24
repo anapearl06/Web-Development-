@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Style a Button</title>
+
+    <!-- Tailwind CSS CDN -->
+    <link 
+        href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" 
+        rel="stylesheet"
+    >
+</head>
+
+<body>
+
+    <!-- Styled Button -->
+    <button class="
+        bg-blue-500
+        px-4
+        py-2
+        rounded
+        hover:bg-blue-700
+    ">
+        Click Me
+    </button>
+
+</body>
+</html>
