@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Required for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Responsive Design</title>
+
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="output.css">
+</head>
+
+<body class="
+    bg-gray-700
+    text-white
+    min-h-screen
+    flex
+    justify-center
+    items-center
+    p-4
+">
+
+    <!-- Main Container -->
+    <div class="
+        bg-gray-800
+        w-full
+        max-w-4xl
+        p-6
+        md:p-10
+        rounded-xl
+        text-center
+    ">
+
+        <!--
+            Responsive Text
+
+            Mobile  → text-3xl
+            Medium  → text-5xl
+            Large   → text-6xl
+        -->
+        <h1 class="
+            text-3xl
+            md:text-5xl
+            lg:text-6xl
+            font-bold
+            text-cyan-400
+        ">
+            Learn Responsive Design
+        </h1>
+
+
+        <!--
+            Responsive Paragraph
+
+            Mobile → smaller text
+            Medium → larger text
+        -->
+        <p class="
+            mt-4
+            text-sm
+            md:text-lg
+            text-gray-300
+        ">
+            Learn how to make your website look good on
+            mobile, tablet and desktop screens.
+        </p>
+
+
+        <!--
+            Responsive Cards
+
+            grid-cols-1
+            → Mobile: 1 column
+
+            md:grid-cols-3
+            → Medium and above: 3 columns
+        -->
+        <div class="
+            mt-8
+            grid
+            grid-cols-1
+            md:grid-cols-3
+            gap-4
+        ">
+
+            <!-- Card 1 -->
+            <div class="
+                bg-blue-600
+                p-5
+                rounded-lg
+            ">
+                <h2 class="text-xl font-bold">
+                    Mobile
+                </h2>
+
+                <p class="mt-2 text-sm">
+                    Small screen design
+                </p>
+            </div>
+
+
+            <!-- Card 2 -->
+            <div class="
+                bg-green-600
+                p-5
+                rounded-lg
+            ">
+                <h2 class="text-xl font-bold">
+                    Tablet
+                </h2>
+
+                <p class="mt-2 text-sm">
+                    Medium screen design
+                </p>
+            </div>
+
+
+            <!-- Card 3 -->
+            <div class="
+                bg-purple-600
+                p-5
+                rounded-lg
+            ">
+                <h2 class="text-xl font-bold">
+                    Desktop
+                </h2>
+
+                <p class="mt-2 text-sm">
+                    Large screen design
+                </p>
+            </div>
+
+        </div>
+
+
+        <!--
+            Responsive Flexbox
+
+            flex-col
+            → Mobile: items vertically
+
+            md:flex-row
+            → Medium screen: items horizontally
+        -->
+        <div class="
+            mt-8
+            flex
+            flex-col
+            md:flex-row
+            justify-between
+            items-center
+            gap-4
+        ">
+
+            <p class="text-gray-300">
+                Resize your browser window 👀
+            </p>
+
+            <button class="
+                bg-cyan-500
+                hover:bg-cyan-600
+                text-gray-900
+                font-bold
+                px-6
+                py-2
+                rounded-lg
+            ">
+                Try Responsive
+            </button>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

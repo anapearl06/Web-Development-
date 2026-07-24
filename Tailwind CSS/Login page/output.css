@@ -242,6 +242,9 @@
   .h-20 {
     height: calc(var(--spacing) * 20);
   }
+  .\!min-h-screen {
+    min-height: 100vh !important;
+  }
   .min-h-screen {
     min-height: 100vh;
   }
@@ -272,8 +275,14 @@
   .resize {
     resize: both;
   }
+  .\!items-center {
+    align-items: center !important;
+  }
   .items-center {
     align-items: center;
+  }
+  .\!justify-center {
+    justify-content: center !important;
   }
   .justify-between {
     justify-content: space-between;
@@ -397,6 +406,9 @@
   .font-semibold {
     --tw-font-weight: var(--font-weight-semibold);
     font-weight: var(--font-weight-semibold);
+  }
+  .\!text-white {
+    color: var(--color-white) !important;
   }
   .text-blue-400 {
     color: var(--color-blue-400);
