@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Center a Div Using Flexbox</title>
+
+    <!-- Tailwind CSS CDN -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+        rel="stylesheet"
+    >
+</head>
+
+<body class="bg-gray-950">
+
+    <!--
+        PARENT CONTAINER
+
+        flex
+        → Parent ko Flexbox container banata hai.
+
+        justify-center
+        → Child ko horizontally center karta hai.
+
+        items-center
+        → Child ko vertically center karta hai.
+
+        min-h-screen
+        → Parent ki minimum height poori screen jitni karta hai.
+
+        px-6
+        → Mobile screens par left-right spacing deta hai.
+    -->
+
+    <div
+        id="parent"
+        class="
+            min-h-screen
+            flex
+            items-center
+            justify-center
+            px-6
+        "
+    >
+
+        <!--
+            CHILD CONTAINER
+
+            Ye actual card hai jo parent ke
+            bilkul center mein place hoga.
+        -->
+
+        <div
+            id="child"
+            class="
+                w-full
+                max-w-md
+                bg-gray-900
+                border
+                border-gray-800
+                rounded-2xl
+                p-8
+                text-center
+                shadow-2xl
+            "
+        >
+
+            <!-- Heading -->
+            <h1 class="
+                text-2xl
+                font-bold
+                text-white
+            ">
+                Perfectly Centered
+            </h1>
+
+
+            <!-- Paragraph -->
+            <p class="
+                mt-4
+                text-gray-400
+                leading-relaxed
+            ">
+                This div is centered both vertically and
+                horizontally using Tailwind CSS Flexbox.
+            </p>
+
+
+            <!-- Small Info Badge -->
+            <div class="
+                mt-6
+                inline-block
+                bg-blue-500
+                bg-opacity-10
+                text-blue-400
+                px-4
+                py-2
+                rounded-lg
+                text-sm
+                font-medium
+            ">
+                Flexbox Centered ✨
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
