@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Card with Box Shadow</title>
+
+    <!-- Tailwind CSS CDN -->
+    <link 
+        href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" 
+        rel="stylesheet"
+    >
+</head>
+
+<body class="min-h-screen bg-gradient-to-br from-gray-900 via-indigo-950 to-gray-900
+             flex items-center justify-center p-6">
+
+    <!-- Card -->
+    <div
+        class="w-full max-w-md
+               bg-white
+               rounded-2xl
+               overflow-hidden
+               shadow-2xl
+               transition duration-500
+               transform hover:-translate-y-2
+               hover:shadow-2xl"
+    >
+
+        <!-- Card Header -->
+        <div class="bg-gradient-to-r from-indigo-600 to-purple-600
+                    px-6 py-8 text-white">
+
+            <div class="flex items-center justify-between">
+
+                <div>
+                    <p class="text-indigo-200 text-sm font-semibold uppercase tracking-wider">
+                        Tailwind CSS
+                    </p>
+
+                    <h2 class="text-2xl font-bold mt-2">
+                        Box Shadow Card
+                    </h2>
+                </div>
+
+                <div class="w-14 h-14 bg-white bg-opacity-20
+                            rounded-2xl
+                            flex items-center justify-center
+                            text-3xl">
+                    ✨
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Card Content -->
+        <div class="p-6">
+
+            <p class="text-gray-600 leading-relaxed">
+                A beautifully styled card using Tailwind CSS utility
+                classes with a subtle shadow effect to create depth
+                and a modern interface.
+            </p>
+
+
+            <!-- Card Info -->
+            <div class="flex items-center gap-4 mt-6">
+
+                <div class="flex-1 bg-gray-50 rounded-xl p-4">
+                    <p class="text-xs text-gray-400 uppercase tracking-wide">
+                        Style
+                    </p>
+
+                    <p class="text-gray-800 font-semibold mt-1">
+                        Modern UI
+                    </p>
+                </div>
+
+                <div class="flex-1 bg-gray-50 rounded-xl p-4">
+                    <p class="text-xs text-gray-400 uppercase tracking-wide">
+                        Effect
+                    </p>
+
+                    <p class="text-gray-800 font-semibold mt-1">
+                        Box Shadow
+                    </p>
+                </div>
+
+            </div>
+
+
+            <!-- Button -->
+            <button
+                class="w-full mt-6
+                       bg-gray-900
+                       text-white
+                       py-3
+                       rounded-xl
+                       font-semibold
+                       shadow-lg
+                       transition duration-300
+                       hover:bg-indigo-600
+                       hover:shadow-xl"
+            >
+                Explore Card
+            </button>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
