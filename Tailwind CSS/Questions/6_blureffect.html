@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Blur Effect | Tailwind CSS</title>
+
+    <!-- Tailwind CSS CDN -->
+    <link 
+        href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" 
+        rel="stylesheet"
+    >
+</head>
+
+<body class="min-h-screen bg-gradient-to-br from-pink-950 via-purple-950 to-indigo-950 
+             flex items-center justify-center p-6">
+
+    <!-- Main Content -->
+    <div class="text-center w-full max-w-2xl">
+
+        <!-- Heading -->
+        <p class="text-pink-400 text-sm font-semibold uppercase tracking-widest mb-3">
+            Tailwind CSS
+        </p>
+
+        <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">
+            Blur Effect
+        </h1>
+
+        <p class="text-purple-800 mb-10">
+            Explore the beauty of blur using Tailwind CSS utilities.
+        </p>
+
+
+        <!-- Image Wrapper -->
+        <div class="relative">
+
+            <!-- Pink & Purple Glow -->
+            <div class="absolute -inset-4
+                        bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500
+                        rounded-3xl blur-2xl opacity-40">
+            </div>
+
+
+            <!-- Image Frame -->
+            <div class="relative rounded-3xl
+                        bg-gradient-to-br from-pink-500 via-purple-500 to-indigo-500
+                        p-1 shadow-2xl">
+
+                <div class="bg-gray-950 rounded-3xl p-3">
+
+                    <!-- Blurred Image -->
+                    <img
+                        src="https://images.unsplash.com/photo-1500534623283-312aade485b7"
+                        alt="Beautiful mountain landscape"
+                        class="w-full h-80 object-cover
+                               rounded-2xl
+                               border border-white border-opacity-10
+                               p-1
+                               filter blur-sm"
+                    >
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Blur Label -->
+        <div class="mt-8 flex justify-center">
+
+            <div class="px-6 py-3 rounded-full
+                        bg-white bg-opacity-10
+                        border border-white border-opacity-20
+                        backdrop-filter backdrop-blur-md
+                        shadow-lg">
+
+                <span class="text-pink-300">
+                    ✨
+                </span>
+
+                <span class="text-red-800 text-sm mx-2">
+                    Image blurred with
+                </span>
+
+                <span class="text-pink-400 font-semibold">
+                    blur-sm
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
