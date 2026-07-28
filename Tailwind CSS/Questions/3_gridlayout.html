@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Basic Grid Layout</title>
+
+    <!-- Tailwind CSS CDN -->
+    <link 
+        href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" 
+        rel="stylesheet"
+    >
+</head>
+
+<body class="min-h-screen bg-gray-900 flex items-center justify-center p-6">
+
+    <!-- Main Container -->
+    <div class="w-full max-w-2xl">
+
+        <!-- Heading Section -->
+        <div class="text-center mb-8">
+
+            <p class="text-sm text-indigo-400 font-semibold uppercase tracking-widest mb-2">
+                Tailwind CSS
+            </p>
+
+            <h1 class="text-3xl md:text-4xl font-bold text-white">
+                Basic Grid Layout
+            </h1>
+
+            <p class="text-gray-400 mt-3">
+                A simple 2 × 2 grid created using Tailwind CSS.
+            </p>
+
+        </div>
+
+
+        <!-- Grid Container -->
+        <div class="grid grid-cols-2 gap-5">
+
+
+            <!-- Cell 1 -->
+            <div
+                class="h-40 bg-blue-600 rounded-2xl
+                       flex flex-col items-center justify-center
+                       text-white shadow-lg
+                       transition duration-300
+                       hover:bg-blue-700 hover:-translate-y-1"
+            >
+
+                <span class="text-4xl mb-2">
+                    🌊
+                </span>
+
+                <h2 class="text-xl font-bold">
+                    Cell 1
+                </h2>
+
+                <p class="text-blue-100 text-sm mt-1">
+                    Blue Section
+                </p>
+
+            </div>
+
+
+            <!-- Cell 2 -->
+            <div
+                class="h-40 bg-purple-600 rounded-2xl
+                       flex flex-col items-center justify-center
+                       text-white shadow-lg
+                       transition duration-300
+                       hover:bg-purple-700 hover:-translate-y-1"
+            >
+
+                <span class="text-4xl mb-2">
+                    ✨
+                </span>
+
+                <h2 class="text-xl font-bold">
+                    Cell 2
+                </h2>
+
+                <p class="text-purple-100 text-sm mt-1">
+                    Purple Section
+                </p>
+
+            </div>
+
+
+            <!-- Cell 3 -->
+            <div
+                class="h-40 bg-green-600 rounded-2xl
+                       flex flex-col items-center justify-center
+                       text-white shadow-lg
+                       transition duration-300
+                       hover:bg-green-700 hover:-translate-y-1"
+            >
+
+                <span class="text-4xl mb-2">
+                    🌿
+                </span>
+
+                <h2 class="text-xl font-bold">
+                    Cell 3
+                </h2>
+
+                <p class="text-green-100 text-sm mt-1">
+                    Green Section
+                </p>
+
+            </div>
+
+
+            <!-- Cell 4 -->
+            <div
+                class="h-40 bg-pink-600 rounded-2xl
+                       flex flex-col items-center justify-center
+                       text-white shadow-lg
+                       transition duration-300
+                       hover:bg-pink-700 hover:-translate-y-1"
+            >
+
+                <span class="text-4xl mb-2">
+                    💖
+                </span>
+
+                <h2 class="text-xl font-bold">
+                    Cell 4
+                </h2>
+
+                <p class="text-pink-100 text-sm mt-1">
+                    Pink Section
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</body>
+</html>
