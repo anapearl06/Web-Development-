@@ -3,7 +3,7 @@ const username = {
   isLoggedin: true,
 };
 
-// username.firstname = "Mr. H";
+// username.firstname = "Miss. Ana";
 username.lastname = "Shukla";
 
 // console.log(username["first name"]);
