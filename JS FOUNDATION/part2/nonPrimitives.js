@@ -1,10 +1,10 @@
 const username = {
-  "first name": "hitesh",
+  "first name": "Ananya",
   isLoggedin: true,
 };
 
 // username.firstname = "Mr. H";
-username.lastname = "choudhary";
+username.lastname = "Shukla";
 
 // console.log(username["first name"]);
 // console.log(username.lastname);
@@ -16,7 +16,7 @@ let today = new Date();
 
 // Array
 
-let anotherUser = ["hitesh", true];
+let anotherUser = ["Ananya", true];
 
 // console.log(anotherUser[0]);
 
