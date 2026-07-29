@@ -24,16 +24,16 @@ let lastname = undefined;
 
 let myString = "hello";
 let myStringOne = "Hola";
-let username = "hitesh";
+let username = "Ananyaa";
 
-let oldGreet = myString + " " + "hitesh";
+let oldGreet = myString + " " + "Ananya";
 // console.log(oldGreet);
 
 let greetMessage = `Hello ${username} !`;
 let demoOne = `Value is ${2 * 2}`;
 // console.log(demoOne);
 
-let sm1 = Symbol("hitesh");
-let sm2 = Symbol("hitesh");
+let sm1 = Symbol("Ananya");
+let sm2 = Symbol("Ananya");
 
 console.log(sm1);
