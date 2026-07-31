@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>☕ JavaScript DOM Playground</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      body {
+        min-height: 100vh;
+        padding: 40px 20px;
+        background: linear-gradient(135deg, #0f172a, #312e81, #7c3aed);
+        color: white;
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 3rem;
+        color: #facc15;
+        margin-bottom: 10px;
+        text-shadow: 0 0 15px rgba(250, 204, 21, 0.5);
+      }
+
+      .subtitle {
+        text-align: center;
+        color: #d1d5db;
+        margin-bottom: 40px;
+        font-size: 1.1rem;
+      }
+
+      section {
+        max-width: 850px;
+        margin: 25px auto;
+        padding: 25px;
+        border-radius: 18px;
+        background: rgba(255, 255, 255, 0.08);
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+        transition: all 0.3s ease;
+      }
+
+      section:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 18px 35px rgba(0, 0, 0, 0.45);
+      }
+
+      h2 {
+        color: #38bdf8;
+        margin-bottom: 15px;
+      }
+
+      p,
+      li,
+      label {
+        font-size: 17px;
+        line-height: 1.6;
+      }
+
+      ul {
+        margin: 15px 0;
+        padding-left: 22px;
+      }
+
+      li {
+        margin: 8px 0;
+      }
+
+      button {
+        margin-top: 15px;
+        padding: 12px 22px;
+        border: none;
+        border-radius: 12px;
+        background: linear-gradient(135deg, #ec4899, #8b5cf6);
+        color: white;
+        font-size: 15px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s ease;
+      }
+
+      button:hover {
+        transform: scale(1.05);
+        background: linear-gradient(135deg, #f43f5e, #3b82f6);
+      }
+
+      input {
+        width: 100%;
+        padding: 12px;
+        margin-top: 12px;
+        border: none;
+        border-radius: 10px;
+        outline: none;
+        font-size: 16px;
+      }
+
+      .highlight {
+        background: linear-gradient(90deg, #fde047, #fb923c);
+        color: #111827;
+        font-weight: bold;
+        padding: 4px 8px;
+        border-radius: 6px;
+      }
+
+      .hidden {
+        display: none;
+      }
+
+      #feedbackDisplay {
+        margin-top: 15px;
+        color: #4ade80;
+        font-weight: bold;
+      }
+
+      @media (max-width: 768px) {
+        h1 {
+          font-size: 2.2rem;
+        }
+
+        section {
+          padding: 20px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>☕ JavaScript DOM Playground 🚀</h1>
+    <p class="subtitle">
+      Learn DOM Manipulation with Interactive Examples
+    </p>
+
+    <!-- Example 1 -->
+    <section id="example-1">
+      <h2>🎯 Accessing DOM Elements</h2>
+
+      <p id="myParagraph">
+        This is a paragraph. Click the button to change me!
+      </p>
+
+      <button id="changeTextButton">Change Text</button>
+    </section>
+
+    <!-- Example 2 -->
+    <section id="example-2">
+      <h2>🌍 Traversing the DOM</h2>
+
+      <ul id="citiesList">
+        <li class="chai">New York</li>
+        <li>Tokyo</li>
+        <li>Paris</li>
+        <li>London</li>
+      </ul>
+
+      <button id="highlightFirstCity">Highlight First City</button>
+    </section>
+
+    <!-- Example 3 -->
+    <section id="example-3">
+      <h2>☕ Manipulating DOM Elements</h2>
+
+      <div id="coffeeOrder">
+        Order:
+        <span id="coffeeType">Latte</span>
+      </div>
+
+      <button id="changeOrder">Change Order to Espresso</button>
+    </section>
+
+    <!-- Example 4 -->
+    <section id="example-4">
+      <h2>🛒 Creating & Inserting Elements</h2>
+
+      <button id="addNewItem">Add New Shopping Item</button>
+
+      <ul id="shoppingList">
+        <li>Bread</li>
+        <li>Milk</li>
+      </ul>
+    </section>
+
+    <!-- Example 5 -->
+    <section id="example-5">
+      <h2>🗑️ Removing DOM Elements</h2>
+
+      <ul id="taskList">
+        <li>Task 1</li>
+        <li>Task 2</li>
+        <li>Task 3</li>
+      </ul>
+
+      <button id="removeLastTask">Remove Last Task</button>
+    </section>
+
+    <!-- Example 6 -->
+    <section id="example-6">
+      <h2>🖱️ Event Handling</h2>
+
+      <button id="clickMeButton">Click Me!</button>
+    </section>
+
+    <!-- Example 7 -->
+    <section id="example-7">
+      <h2>🍵 Event Delegation</h2>
+
+      <ul id="teaList">
+        <li class="teaItem">Green Tea</li>
+        <li class="teaItem">Black Tea</li>
+        <li class="teaItem">Oolong Tea</li>
+      </ul>
+
+      <p>Click on any tea to select it!</p>
+    </section>
+
+    <!-- Example 8 -->
+    <section id="example-8">
+      <h2>📝 Form Handling</h2>
+
+      <form id="feedbackForm">
+        <label for="feedbackInput">Your Feedback</label>
+
+        <input
+          type="text"
+          id="feedbackInput"
+          placeholder="Enter your feedback..."
+        />
+
+        <button type="submit">Submit Feedback</button>
+      </form>
+
+      <p id="feedbackDisplay"></p>
+    </section>
+
+    <!-- Example 9 -->
+    <section id="example-9">
+      <h2>⚡ DOM Content Loaded</h2>
+
+      <p id="domStatus">Waiting for DOM to load...</p>
+    </section>
+
+    <!-- Example 10 -->
+    <section id="example-10">
+      <h2>🎨 CSS Class Manipulation</h2>
+
+      <p id="descriptionText">
+        This text will change color when highlighted!
+      </p>
+
+      <button id="toggleHighlight">Toggle Highlight</button>
+    </section>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
