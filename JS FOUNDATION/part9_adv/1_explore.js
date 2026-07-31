@@ -1,7 +1,13 @@
-console.log("ananya.com");
+function sayHello() {
+  console.log("I would like to say Hello");
+}
 
-for (let index = 0; index <10; index++)
-{
-    console.log(index);
-    
+setTimeout(() => {
+  sayHello();
+}, 4000);
+
+console.log("chaicode");
+
+for (let index = 0; index < 10; index++) {
+  console.log(index);
 }
