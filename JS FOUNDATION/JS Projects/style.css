@@ -1,640 +1,425 @@
-/* ===================================
-   Google Font
-=================================== */
+/* Colors */
+:root{
+    --pink:#ff006e;
+    --light-pink:#ff4d94;
+    --blue:#3a86ff;
+    --purple:#8338ec;
+    --gold:#ffbe0b;
+    --green:#00e676;
+    --red:#ff4d6d;
+    --brown:#8b4513;
+    --glass:rgba(255,255,255,.08);
+    --border:rgba(255,255,255,.15);
+    --text:#ffffff;
+}
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
-
-/* ===================================
-   Global Styling
-=================================== */
-
+/* Reset */
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:'Poppins',sans-serif;
-}
-
-html{
-    scroll-behavior:smooth;
+    font-family:"Poppins",sans-serif;
 }
 
 body{
-
     min-height:100vh;
-
     display:flex;
     justify-content:center;
     align-items:center;
-
-    padding:50px 20px;
-
-    color:#ffffff;
+    padding:40px 20px;
+    color:var(--text);
 
     background:
-
-    radial-gradient(circle at top left,#ff006e33,transparent 35%),
-
-    radial-gradient(circle at bottom right,#3a86ff33,transparent 35%),
-
-    radial-gradient(circle at center,#8338ec22,transparent 45%),
-
+    radial-gradient(circle at top left,#ff006e35,transparent 35%),
+    radial-gradient(circle at bottom right,#3a86ff35,transparent 35%),
     linear-gradient(
         135deg,
         #090909,
-        #170312,
-        #1b1033,
-        #24120d,
-        #120d2e
+        #1a0712,
+        #17102b,
+        #24150d
     );
-
-    overflow-x:hidden;
 }
 
 
-/* ===================================
-   Scrollbar
-=================================== */
-
-::-webkit-scrollbar{
-
-    width:10px;
-
-}
-
-::-webkit-scrollbar-track{
-
-    background:#111;
-
-}
-
-::-webkit-scrollbar-thumb{
-
-    background:linear-gradient(
-        to bottom,
-        #ff006e,
-        #8338ec,
-        #3a86ff
-    );
-
-    border-radius:20px;
-
-}
-
-::-webkit-scrollbar-thumb:hover{
-
-    background:#ff4d94;
-
-}
-
-
-/* ===================================
-   Main Container
-=================================== */
-
+/* Container */
 .container{
-
     width:100%;
     max-width:950px;
-
     padding:35px;
 
+    background:rgba(255,255,255,.06);
+    border:1px solid var(--border);
     border-radius:30px;
 
-    backdrop-filter:blur(18px);
-
-    background:rgba(255,255,255,.06);
-
-    border:1px solid rgba(255,255,255,.15);
+    backdrop-filter:blur(15px);
 
     box-shadow:
-
-    0 15px 40px rgba(0,0,0,.45),
-
-    0 0 40px rgba(255,0,110,.15),
-
-    0 0 70px rgba(58,134,255,.08);
-
+    0 20px 50px rgba(0,0,0,.5),
+    0 0 40px #ff006e20;
 }
 
 
-/* ===================================
-   Header
-=================================== */
-
+/* Header */
 header{
-
     text-align:center;
-
     margin-bottom:35px;
-
 }
 
 header h1{
-
     font-size:3rem;
-
     font-weight:800;
-
-    letter-spacing:1px;
 
     background:linear-gradient(
         90deg,
-        #ff006e,
-        #ffbe0b,
-        #3a86ff
+        var(--pink),
+        var(--gold),
+        var(--blue)
     );
 
     -webkit-background-clip:text;
     -webkit-text-fill-color:transparent;
-
 }
 
 header p{
-
     margin-top:10px;
-
-    color:#d5d5d5;
-
-    font-size:1.05rem;
-
+    color:#ddd;
 }
 
 
-/* ===================================
-   Add Task Section
-=================================== */
-
+/* Add Task */
 .add-task{
-
     display:flex;
-
     gap:15px;
-
-    margin-bottom:35px;
-
+    margin-bottom:30px;
 }
 
 .add-task input{
-
     flex:1;
-
-    padding:18px;
+    padding:16px;
 
     border:none;
-
     outline:none;
-
-    border-radius:16px;
-
-    font-size:16px;
+    border-radius:15px;
 
     color:white;
+    font-size:16px;
 
-    background:rgba(255,255,255,.08);
+    background:var(--glass);
+    border:1px solid var(--border);
 
-    border:1px solid rgba(255,255,255,.12);
-
-    transition:.35s;
-
+    transition:.3s;
 }
 
 .add-task input::placeholder{
-
-    color:#c6c6c6;
-
+    color:#bbb;
 }
 
 .add-task input:focus{
-
-    border-color:#ff006e;
-
-    box-shadow:
-
-    0 0 15px #ff006e88;
-
+    border-color:var(--pink);
+    box-shadow:0 0 15px #ff006e60;
 }
 
 
-/* ===================================
-   Add Button
-=================================== */
-
 #addTaskBtn{
+    padding:15px 28px;
 
     border:none;
+    border-radius:15px;
 
     cursor:pointer;
 
-    padding:16px 28px;
-
-    font-size:16px;
-
-    font-weight:600;
-
     color:white;
-
-    border-radius:15px;
+    font-weight:600;
 
     background:linear-gradient(
         135deg,
-        #ff006e,
-        #8338ec,
-        #3a86ff
+        var(--pink),
+        var(--purple),
+        var(--blue)
     );
 
-    transition:.35s;
-
+    transition:.3s;
 }
 
 #addTaskBtn:hover{
-
-    transform:translateY(-4px);
+    transform:translateY(-3px);
 
     box-shadow:
-
-    0 10px 25px rgba(255,0,110,.45);
-
+    0 10px 25px #ff006e60;
 }
 
-/* ===================================
-   Filters
-=================================== */
-
+/* Filters */
 .filters{
-
     display:flex;
-
     justify-content:center;
-
-    gap:18px;
-
+    gap:15px;
     flex-wrap:wrap;
-
-    margin-bottom:35px;
-
+    margin-bottom:30px;
 }
 
 .filter-btn{
-
-    padding:14px 24px;
+    padding:12px 22px;
 
     border:none;
+    border-radius:14px;
 
     cursor:pointer;
 
-    font-size:15px;
-
+    color:white;
     font-weight:600;
 
-    border-radius:14px;
+    background:var(--glass);
+    border:1px solid var(--border);
 
-    color:white;
-
-    background:rgba(255,255,255,.08);
-
-    border:1px solid rgba(255,255,255,.12);
-
-    transition:.35s;
-
+    transition:.3s;
 }
 
 .filter-btn:hover{
-
-    transform:translateY(-4px);
+    transform:translateY(-3px);
 
     background:linear-gradient(
         135deg,
-        #ff006e,
-        #8338ec,
-        #3a86ff
+        var(--pink),
+        var(--purple)
     );
 
     box-shadow:
-    0 8px 20px rgba(255,0,110,.35);
-
+    0 8px 20px #ff006e50;
 }
 
 .filter-btn.active{
-
     background:linear-gradient(
         135deg,
-        #ff006e,
-        #ff4d6d
+        var(--pink),
+        var(--light-pink)
     );
 
     box-shadow:
-    0 0 18px rgba(255,0,110,.55);
-
+    0 0 20px #ff006e70;
 }
 
 
-/* ===================================
-   Statistics
-=================================== */
-
+/* Statistics */
 .task-info{
-
     display:grid;
 
-    grid-template-columns:repeat(3,1fr);
+    grid-template-columns:
+    repeat(3,1fr);
 
     gap:18px;
 
-    margin-bottom:35px;
-
+    margin-bottom:30px;
 }
 
 .task-info span{
 
     padding:20px;
 
-    border-radius:18px;
-
     text-align:center;
 
-    background:rgba(255,255,255,.07);
+    border-radius:18px;
 
-    border:1px solid rgba(255,255,255,.1);
+    background:var(--glass);
+    border:1px solid var(--border);
 
     transition:.3s;
-
 }
 
 .task-info span:hover{
-
     transform:translateY(-5px);
-
 }
 
 .task-info strong{
-
     display:block;
 
-    margin-top:10px;
+    margin-top:8px;
 
     font-size:2rem;
-
-    font-weight:700;
-
 }
 
+
 .task-info span:nth-child(1) strong{
-
-    color:#3a86ff;
-
+    color:var(--blue);
 }
 
 .task-info span:nth-child(2) strong{
-
-    color:#00e676;
-
+    color:var(--green);
 }
 
 .task-info span:nth-child(3) strong{
-
-    color:#ffbe0b;
-
+    color:var(--gold);
 }
 
 
-/* ===================================
-   Task Container
-=================================== */
-
-.task-container{
-
-    margin-bottom:30px;
-
-}
-
+/* Task List */
 #taskList{
-
     list-style:none;
 
     display:flex;
-
     flex-direction:column;
 
-    gap:18px;
-
+    gap:15px;
 }
 
 
-/* ===================================
-   Empty State
-=================================== */
-
+/* Empty State */
 #emptyState{
-
-    text-align:center;
-
-    margin:45px 0;
 
     padding:40px;
 
-    border-radius:22px;
+    text-align:center;
+
+    border-radius:20px;
 
     background:rgba(255,255,255,.05);
 
-    border:2px dashed rgba(255,255,255,.15);
+    border:1px dashed rgba(255,255,255,.2);
 
+    margin:30px 0;
 }
 
 #emptyState h2{
 
-    font-size:2rem;
+    color:var(--light-pink);
 
-    color:#ff4d94;
-
-    margin-bottom:12px;
-
+    margin-bottom:10px;
 }
 
 #emptyState p{
-
-    color:#d4d4d4;
-
-    font-size:1rem;
-
+    color:#ccc;
 }
 
 
-/* ===================================
-   Footer
-=================================== */
-
+/* Footer */
 footer{
 
     display:flex;
 
     justify-content:center;
 
-    gap:20px;
+    gap:15px;
 
-    margin-top:35px;
+    margin-top:30px;
 
     flex-wrap:wrap;
-
 }
+
 
 footer button{
 
-    padding:15px 28px;
+    padding:14px 25px;
 
     border:none;
 
+    border-radius:14px;
+
     cursor:pointer;
-
-    font-size:15px;
-
-    font-weight:600;
 
     color:white;
 
-    border-radius:14px;
+    font-weight:600;
 
-    transition:.35s;
-
+    transition:.3s;
 }
 
-
-/* Clear Completed */
 
 #clearCompleted{
 
     background:linear-gradient(
         135deg,
-        #3a86ff,
-        #8338ec
+        var(--blue),
+        var(--purple)
     );
-
 }
 
-#clearCompleted:hover{
-
-    transform:translateY(-4px);
-
-    box-shadow:
-    0 10px 25px rgba(58,134,255,.4);
-
-}
-
-
-/* Delete All */
 
 #deleteAll{
 
     background:linear-gradient(
         135deg,
-        #ff006e,
-        #ff4d6d
+        var(--pink),
+        var(--red)
     );
-
 }
 
-#deleteAll:hover{
+
+footer button:hover{
 
     transform:translateY(-4px);
 
     box-shadow:
-    0 10px 25px rgba(255,0,110,.45);
-
+    0 10px 25px rgba(0,0,0,.35);
 }
 
-/* ===================================
-   Task Card
-=================================== */
-
+/* Task Card */
 .task{
-
     display:flex;
-
     justify-content:space-between;
-
     align-items:center;
 
-    gap:18px;
+    gap:15px;
 
-    padding:18px 22px;
+    padding:18px 20px;
 
     border-radius:18px;
 
-    background:rgba(255,255,255,.07);
+    background:var(--glass);
+    border:1px solid var(--border);
 
-    border:1px solid rgba(255,255,255,.12);
+    transition:.3s;
 
-    backdrop-filter:blur(10px);
-
-    transition:.35s;
-
-    animation:fadeUp .5s ease;
-
+    animation:slideIn .4s ease;
 }
 
 .task:hover{
 
-    transform:translateY(-6px) scale(1.01);
+    transform:translateY(-5px);
 
-    border-color:#3a86ff;
+    border-color:var(--blue);
 
     box-shadow:
-    0 15px 35px rgba(58,134,255,.18);
-
+    0 15px 30px #3a86ff25;
 }
 
-
-/* ===================================
-   Task Text
-=================================== */
 
 .task span{
 
     flex:1;
 
-    font-size:17px;
+    font-size:16px;
 
-    color:#ffffff;
+    color:white;
 
     word-break:break-word;
-
 }
 
 
 /* Completed Task */
-
 .task.completed span{
 
     text-decoration:line-through;
 
-    color:#9e9e9e;
+    color:#aaa;
 
-    opacity:.75;
-
+    opacity:.7;
 }
 
 
-/* ===================================
-   Action Buttons
-=================================== */
-
+/* Buttons */
 .actions{
 
     display:flex;
 
     gap:10px;
-
 }
 
 
-/* Common Button */
-
 .actions button{
 
-    width:42px;
-
-    height:42px;
+    width:40px;
+    height:40px;
 
     border:none;
 
@@ -644,15 +429,20 @@ footer button{
 
     color:white;
 
-    font-size:18px;
+    font-size:17px;
 
     transition:.3s;
+}
+
+
+.actions button:hover{
+
+    transform:scale(1.12);
 
 }
 
 
-/* Complete */
-
+/* Complete Button */
 .complete-btn{
 
     background:linear-gradient(
@@ -660,227 +450,156 @@ footer button{
         #00c853,
         #64dd17
     );
-
 }
 
 .complete-btn:hover{
 
-    transform:scale(1.1);
-
     box-shadow:
-    0 0 18px rgba(0,200,83,.45);
-
+    0 0 18px #00c85370;
 }
 
 
-/* Edit */
-
+/* Edit Button */
 .edit-btn{
 
     background:linear-gradient(
         135deg,
-        #3a86ff,
+        var(--blue),
         #00b4d8
     );
-
 }
 
 .edit-btn:hover{
 
-    transform:scale(1.1);
-
     box-shadow:
-    0 0 18px rgba(58,134,255,.45);
-
+    0 0 18px #3a86ff70;
 }
 
 
-/* Delete */
-
+/* Delete Button */
 .delete-btn{
 
     background:linear-gradient(
         135deg,
-        #ff006e,
-        #ff4d6d
+        var(--pink),
+        var(--red)
     );
-
 }
 
 .delete-btn:hover{
 
-    transform:scale(1.1);
-
     box-shadow:
-    0 0 18px rgba(255,0,110,.45);
-
+    0 0 18px #ff006e70;
 }
 
 
-/* ===================================
-   Input Focus Animation
-=================================== */
+/* Animations */
+@keyframes slideIn{
 
-.add-task input:focus{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
 
-    transform:scale(1.01);
-
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
 }
 
-
-/* ===================================
-   Button Active Effect
-=================================== */
 
 button:active{
 
     transform:scale(.95);
-
 }
 
 
-/* ===================================
-   Fade Animation
-=================================== */
+/* Scrollbar */
+::-webkit-scrollbar{
 
-@keyframes fadeUp{
+    width:8px;
+}
 
-    from{
+::-webkit-scrollbar-thumb{
 
-        opacity:0;
+    background:linear-gradient(
+        var(--pink),
+        var(--blue)
+    );
 
-        transform:translateY(25px);
-
-    }
-
-    to{
-
-        opacity:1;
-
-        transform:translateY(0);
-
-    }
-
+    border-radius:20px;
 }
 
 
-/* ===================================
-   Floating Animation
-=================================== */
-
-.container{
-
-    animation:floatCard 5s ease-in-out infinite;
-
-}
-
-@keyframes floatCard{
-
-    0%{
-
-        transform:translateY(0);
-
-    }
-
-    50%{
-
-        transform:translateY(-6px);
-
-    }
-
-    100%{
-
-        transform:translateY(0);
-
-    }
-
-}
-
-
-/* ===================================
-   Responsive
-=================================== */
-
-@media(max-width:900px){
+/* Responsive */
+@media(max-width:800px){
 
     .task-info{
 
         grid-template-columns:1fr;
-
     }
 
 }
 
 
-@media(max-width:700px){
+@media(max-width:600px){
 
-    .add-task{
+    body{
 
-        flex-direction:column;
-
+        padding:20px 10px;
     }
 
-    #addTaskBtn{
 
-        width:100%;
+    .container{
 
+        padding:25px 18px;
     }
 
-    footer{
-
-        flex-direction:column;
-
-    }
-
-    footer button{
-
-        width:100%;
-
-    }
-
-}
-
-
-@media(max-width:550px){
 
     header h1{
 
         font-size:2.2rem;
-
     }
 
-    header p{
 
-        font-size:.95rem;
+    .add-task{
 
+        flex-direction:column;
     }
 
-    .filters{
 
-        gap:10px;
+    #addTaskBtn{
 
+        width:100%;
     }
 
-    .filter-btn{
-
-        flex:1;
-
-    }
 
     .task{
 
         flex-direction:column;
 
         align-items:flex-start;
-
     }
+
 
     .actions{
 
         width:100%;
 
         justify-content:flex-end;
+    }
 
+
+    .filter-btn{
+
+        flex:1;
+    }
+
+
+    footer button{
+
+        width:100%;
     }
 
 }
+
