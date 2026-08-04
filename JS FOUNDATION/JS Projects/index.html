@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌙 Dark Mode To-Do List</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Header -->
+        <header>
+
+            <h1>🌙 Dark Mode To-Do List</h1>
+
+            <p>
+                Stay organized. Stay productive. 🚀
+            </p>
+
+        </header>
+
+
+        <!-- Add Task -->
+        <section class="add-task">
+
+            <input
+                type="text"
+                id="taskInput"
+                placeholder="✨ What do you want to accomplish today?"
+            >
+
+            <button id="addTaskBtn">
+                ➕ Add Task
+            </button>
+
+        </section>
+
+
+        <!-- Filters -->
+        <section class="filters">
+
+            <button
+                class="filter-btn active"
+                data-filter="all"
+            >
+                📋 All
+            </button>
+
+            <button
+                class="filter-btn"
+                data-filter="completed"
+            >
+                ✅ Completed
+            </button>
+
+            <button
+                class="filter-btn"
+                data-filter="pending"
+            >
+                ⏳ Pending
+            </button>
+
+        </section>
+
+
+        <!-- Statistics -->
+        <section class="task-info">
+
+            <span>
+                📌 Total:
+                <strong id="taskCount">0</strong>
+            </span>
+
+            <span>
+                ✅ Completed:
+                <strong id="completedCount">0</strong>
+            </span>
+
+            <span>
+                ⏳ Pending:
+                <strong id="pendingCount">0</strong>
+            </span>
+
+        </section>
+
+
+        <!-- Task List -->
+        <section class="task-container">
+
+            <ul id="taskList">
+
+                <!-- Example -->
+                <!--
+                <li class="task">
+
+                    <span>
+                        📖 Learn JavaScript DOM
+                    </span>
+
+                    <div class="actions">
+
+                        <button class="complete-btn">
+                            ✔️
+                        </button>
+
+                        <button class="edit-btn">
+                            ✏️
+                        </button>
+
+                        <button class="delete-btn">
+                            🗑️
+                        </button>
+
+                    </div>
+
+                </li>
+                -->
+
+            </ul>
+
+        </section>
+
+
+        <!-- Empty State -->
+        <section id="emptyState">
+
+            <h2>
+                📝 No Tasks Yet
+            </h2>
+
+            <p>
+                Add your first task and start your productive journey! 🚀
+            </p>
+
+        </section>
+
+
+        <!-- Footer -->
+        <footer>
+
+            <button id="clearCompleted">
+                🧹 Clear Completed
+            </button>
+
+            <button id="deleteAll">
+                🗑️ Delete All
+            </button>
+
+        </footer>
+
+    </div>
+
+</body>
+</html>
