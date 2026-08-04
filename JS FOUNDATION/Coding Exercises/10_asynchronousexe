@@ -1,0 +1,84 @@
+// Task 1: Simulating Asynchronous Behavior
+function simulateAsyncTask() {
+
+    console.log("Task started");
+
+    // Simulate an asynchronous task
+    setTimeout(function () {
+        console.log("Task finished");
+    }, 2000);
+}
+
+
+// Task 2: Simulate Multiple Async Tasks
+function simulateMultipleTasks() {
+
+    console.log("Starting multiple tasks...");
+
+    // Task 1
+    setTimeout(function () {
+        console.log("Task 1 finished");
+    }, 1000);
+
+    // Task 2
+    setTimeout(function () {
+        console.log("Task 2 finished");
+    }, 2000);
+
+    // Task 3
+    setTimeout(function () {
+        console.log("Task 3 finished");
+    }, 3000);
+}
+
+
+// Task 3: Async Task with Callback
+function fetchDataWithCallback(callback) {
+
+    console.log("Fetching data...");
+
+    // Simulate fetching data
+    setTimeout(function () {
+        callback("Fetched data");
+    }, 2000);
+}
+
+
+// Callback Function
+function displayData(data) {
+    console.log(data);
+}
+
+
+// Test Cases
+
+// Task 1
+simulateAsyncTask();
+// Output:
+// Task started
+// (After 2 seconds)
+// Task finished
+
+
+// Task 2
+simulateMultipleTasks();
+// Output:
+// Starting multiple tasks...
+// (After 1 second)
+// Task 1 finished
+// (After 2 seconds)
+// Task 2 finished
+// (After 3 seconds)
+// Task 3 finished
+
+
+// Task 3
+fetchDataWithCallback(displayData);
+// Output:
+// Fetching data...
+// (After 2 seconds)
+// Fetched data
+// (After 3 seconds)
+// displayData("Fetched data")
+// Output:
+// Fetched data
