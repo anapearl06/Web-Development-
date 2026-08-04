@@ -1,0 +1,88 @@
+// Task 1: Create Inheritance Using Prototypes
+
+// Parent Constructor
+function Animal() {
+
+}
+
+// Add method to Animal's prototype
+Animal.prototype.makeSound = function () {
+    return "Animal is making a sound";
+};
+
+
+// Child Constructor
+function Dog() {
+
+}
+
+// Inherit Animal's prototype
+Dog.prototype = Object.create(Animal.prototype);
+
+// Restore the constructor reference
+Dog.prototype.constructor = Dog;
+
+// Add method to Dog's prototype
+Dog.prototype.bark = function () {
+    return "Woof!";
+};
+
+
+// Task 2: Shape and Rectangle Inheritance
+
+// Parent Constructor
+function Shape(color) {
+
+    this.color = color;
+}
+
+// Add method to Shape's prototype
+Shape.prototype.getColor = function () {
+    return this.color;
+};
+
+
+// Child Constructor
+function Rectangle(color, width, height) {
+
+    // Call the parent constructor
+    Shape.call(this, color);
+
+    this.width = width;
+    this.height = height;
+}
+
+// Inherit Shape's prototype
+Rectangle.prototype = Object.create(Shape.prototype);
+
+// Restore the constructor reference
+Rectangle.prototype.constructor = Rectangle;
+
+// Add method to Rectangle's prototype
+Rectangle.prototype.getArea = function () {
+    return this.width * this.height;
+};
+
+
+// Create Objects
+const dog = new Dog();
+
+const rectangle = new Rectangle("Blue", 10, 5);
+
+
+// Test Cases
+
+// Task 1
+console.log(dog.makeSound());          // Animal is making a sound
+console.log(dog.bark());               // Woof!
+
+console.log(dog instanceof Dog);       // true
+console.log(dog instanceof Animal);    // true
+
+
+// Task 2
+console.log(rectangle.getColor());     // Blue
+console.log(rectangle.getArea());      // 50
+
+console.log(rectangle instanceof Rectangle); // true
+console.log(rectangle instanceof Shape);     // true
