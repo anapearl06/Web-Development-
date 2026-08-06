@@ -20,7 +20,7 @@ body{
     background:
     radial-gradient(circle at top left,#6a11cb55,transparent 35%),
     radial-gradient(circle at bottom right,#2575fc55,transparent 35%),
-    linear-gradient(135deg,#0f172a,#1e293b,#111827);
+    linear-gradient(135deg,#5f76ad,#334f7c,#111827);
 }
 
 /* Card */
@@ -52,7 +52,7 @@ h1{
 
     margin-bottom:8px;
 
-    background:linear-gradient(90deg,#6a11cb,#2575fc);
+    background:linear-gradient(90deg,#5c05ba,#002057);
 
     background-clip:text;
     color:transparent;
@@ -91,7 +91,7 @@ input{
 
     background:rgba(255,255,255,.08);
 
-    color:#fff;
+    color:#eadada;
 
     font-size:15px;
 
@@ -105,7 +105,7 @@ input::placeholder{
 
 input:focus{
 
-    border:1px solid #4f9dff;
+    border:1px solid #589bed;
 
     box-shadow:
     0 0 15px rgba(79,157,255,.35);
@@ -150,7 +150,7 @@ button:hover{
 
     background:rgba(255,255,255,.06);
 
-    border:1px solid rgba(255,255,255,.12);
+    border:1px solid rgba(231, 219, 219, 0.12);
 
     animation:fade .4s ease;
 }
@@ -161,7 +161,7 @@ button:hover{
 
     margin-bottom:12px;
 
-    color:#60a5fa;
+    color:#022348;
 }
 
 #temperature{
@@ -171,6 +171,8 @@ button:hover{
     font-weight:bold;
 
     margin-bottom:10px;
+
+    color: #011946;
 }
 
 #description{
