@@ -1,0 +1,24 @@
+{
+  "name": "node.js",
+  "version": "1.0.0",
+  "description": "A project Management Application for me.",
+  "keywords": [
+    "API",
+    "BACKEND",
+    "NODEJS",
+    "PROJECT",
+    "PROJECT",
+    "MANAGEMENT",
+    "APPLICATION"
+  ],
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "Ananya Shukla",
+  "type": "\"ISC\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
