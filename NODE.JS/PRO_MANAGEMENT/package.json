@@ -1,14 +1,13 @@
 {
   "name": "node.js",
   "version": "1.0.0",
-  "description": "A project Management Application for me.",
+  "description": "A Project Management Application for me.",
   "keywords": [
     "API",
     "BACKEND",
     "NODEJS",
     "PROJECT",
-    "PROJECT",
-    "MANAGEMENT",
+    "PROJECT MANAGEMENT",
     "APPLICATION"
   ],
   "repository": {
@@ -16,8 +15,8 @@
     "url": ""
   },
   "author": "Ananya Shukla",
-  "type": "commonjs",
   "license": "ISC",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "dev": "node index.js"
