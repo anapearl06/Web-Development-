@@ -16,7 +16,8 @@
     "url": ""
   },
   "author": "Ananya Shukla",
-  "type": "\"ISC\"",
+  "type": "commonjs",
+  "license": "ISC",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
