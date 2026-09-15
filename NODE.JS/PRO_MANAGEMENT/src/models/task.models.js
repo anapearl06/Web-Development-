@@ -8,7 +8,11 @@ const taskSchema = new Schema(
       required: true,
       trim: true,
     },
-
+    description: String,
+    project: {
+      type: Schema.Types.ObjectId,
+      ref: "Project",
+      required: true,
     },
     assignedTo: {
       type: Schema.Types.ObjectId,
