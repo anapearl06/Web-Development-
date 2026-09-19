@@ -26,3 +26,4 @@ setInterval(() => {
 
 logger.log("Application started");
 logger.log("Application event occurred");
+logger.log("Application event occurred");
